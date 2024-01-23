@@ -6,6 +6,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 project_name = "CNN_Classifier"
 
+# list of filename to be created 
 list_of_files = [
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
@@ -25,6 +26,7 @@ list_of_files = [
     "templates/index.html"
 ]
 
+#creating the files 
 
 for filepath in list_of_files:
     filepath = Path(filepath)
